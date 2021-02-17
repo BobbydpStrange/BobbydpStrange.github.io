@@ -1,0 +1,10 @@
+body {
+    background-color: lightskyblue;
+}
+
+.content {
+    text-align: center; 
+    border: navy 1.5px solid;
+    background: rgb(175, 217, 243);
+
+}
