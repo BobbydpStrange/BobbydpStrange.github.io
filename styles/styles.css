@@ -1,0 +1,106 @@
+body{
+    /*margin:20px;*/
+	background-color:rgb(120, 139, 138);
+	margin:0px;
+	background: 
+	 /*transparent*/
+	 	linear-gradient(
+			rgba(206, 240, 237, 0.45),/*rgba(128, 229, 255, .65)*/
+				rgba(120, 139, 138, .45)
+		 ),
+		url(../images/pexels-elijah-o.jpg);
+		
+	background-size: cover;
+	
+}
+/*profile pic*/
+.main-img {
+	width: 70px;
+	height: 70px;
+	position: relative;
+	overflow: hidden; /*hids the excess of the image*/
+	border-radius: 50%;
+	border: black 1px solid;
+	
+}
+
+.profile-pic {
+	display: inline;
+	margin: 0 auto;
+	margin-left: -25%; /*centers the image*/
+	height: 100%;
+	border-radius: auto;
+}
+
+/*Nav*/
+.header {
+	background:rgb(44, 44, 44);
+	color: white;
+	height: 130px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding:60px 100px;
+}
+.nav-wrapper{
+	width:100%;
+	min-width:584px;
+	/*grid*/
+	display: grid;
+	grid-template-columns: 1fr;
+	
+}
+
+.nav-wrapper-top {
+	margin-top: 50px;
+	display:grid;
+	grid-template-columns: 1fr;
+	justify-items: center;
+
+}
+
+.nav-wrapper-bottom {
+	border-top: white 1px solid;
+	display:flex;
+	align-items: center;
+	justify-content:space-between;
+	flex-flow:row wrap;
+}
+
+
+
+
+/*content*/
+#resume {
+	border:black 1px solid;
+	border-radius: 1px;
+	background: rgba(253, 255, 255, 0.65);/*45*/
+	padding: 30px;
+	/*margin: 15px 16em;*/
+	margin: 20px auto;
+	max-width: 495px;
+	min-width: 30em;
+	height: 100%;
+}
+h2{
+    text-decoration:underline;
+    letter-spacing: 1px;
+    color:rgb(44, 44, 44);
+}
+.indent{
+    text-indent: 25px;
+}
+
+
+
+/*footer*/
+.footer {
+	height: 3em;
+	background:rgb(44, 44, 44);
+	color: white;
+	text-align: center;
+	padding-top: 5px;
+	margin: 0px;
+	bottom: 0;
+	width: 100%;
+}
