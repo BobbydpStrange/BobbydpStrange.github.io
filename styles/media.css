@@ -1,0 +1,190 @@
+/* This is the media restyling */
+
+/* iPad */
+@media screen and (max-width: 768px)
+{
+	body{
+        /* grid for page */
+    display:grid;
+    /* 3x1? */
+    grid-template-columns: 100%;
+    grid-template-rows: 256px 75% auto;
+    grid-template-areas:
+    "head"
+    "content"
+    "footer";
+    }
+
+    .header {
+    grid-area: head;
+    background:rgb(44, 44, 44);
+    color: white;
+    height:14em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:30px 0px 10px;
+    width:100%;
+    }
+    .nav-wrapper{
+        width:100%;
+        min-width:88%;
+        /*grid*/
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+       
+    .nav-wrapper-top {
+        display:grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        width:100%;
+
+    }
+    .nav-wrapper-bottom {
+        border-top: white 1px solid;
+        display:grid;
+        align-items: center;
+        justify-content:center;
+        grid-template-columns: 88%;
+        grid-template-rows: 15px;
+        grid-template-areas:
+        "email"
+        "phone";
+
+    }
+
+    #email {
+        grid-area:email;
+        padding-top: 20px;
+        text-align:center;
+        font-size: 20px;
+    }
+    #phone{
+        grid-area:phone;
+        text-align:center;
+        font-size: 20px;
+    }
+
+
+        #resume {
+        grid-area:content;
+        border:black 1px solid;
+        border-radius: 1px;
+        background: rgba(253, 255, 255, 0.65);/*45*/
+        padding: 30px;
+        /*margin: 15px 16em;*/
+        margin: auto auto;
+
+        max-width: 88%;
+        min-width: 60%;
+        height: fit-content;
+        /* min-width: 350px; */
+        font-size: 16px;
+    }
+    h2{
+            text-decoration:underline;
+            letter-spacing: 1px;
+            color:rgb(44, 44, 44);
+    }
+    h1 {
+        font-size:25px;
+    }
+} 
+
+
+/* phone changes */
+ @media screen and (max-width: 549px)
+{
+    body{
+        /* grid for page */
+    display:grid;
+    /* 3x1? */
+    grid-template-columns: 100%;
+    grid-template-rows: 252px 78% auto;
+    grid-template-areas:
+    "head"
+    "content"
+    "footer";
+    }
+
+    .header {
+    grid-area: head;
+    background:rgb(44, 44, 44);
+    color: white;
+    height:14em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:30px 0px 5px;
+    width:100%;
+    }
+    .nav-wrapper{
+        width:100%;
+        min-width:88%;
+        /*grid*/
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+       
+    .nav-wrapper-top {
+        display:grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        width:100%;
+
+    }
+    .nav-wrapper-bottom {
+        border-top: white 1px solid;
+        display:grid;
+        align-items: center;
+        justify-content:center;
+        grid-template-columns: 97%;
+        grid-template-rows: 15px;
+        grid-template-areas:
+        "email"
+        "phone";
+
+    }
+
+    #email {
+        grid-area:email;
+        padding-top: 20px;
+        text-align:center;
+        font-size: 20px;
+    }
+    #phone{
+        grid-area:phone;
+        text-align:center;
+        font-size: 20px;
+    }
+
+
+    #resume {
+        grid-area:content;
+        border:black 1px solid;
+        border-radius: 1px;
+        background: rgba(253, 255, 255, 0.65);/*45*/
+        padding: 30px;
+        /*margin: 15px 16em;*/
+        margin: auto 20px;
+
+        max-width: 88%;
+        min-width: 60%;
+        height: fit-content;
+        /* min-width: 350px; */
+        font-size: 15px;
+    }
+    h2{
+        text-decoration:underline;
+        letter-spacing: 1px;
+        color:rgb(44, 44, 44);
+    }
+    h1 {
+        font-size:25px;
+    }
+} 

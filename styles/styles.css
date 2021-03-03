@@ -1,3 +1,4 @@
+
 body{
     /*margin:20px;*/
 	background-color:rgb(120, 139, 138);
@@ -11,7 +12,16 @@ body{
 		url(../images/pexels-elijah-o.jpg);
 		
 	background-size: cover;
-	
+
+	/* grid for page
+	display:grid;
+	/* 3x1? */
+	/* grid-template-columns: 1fr;
+	grid-template-rows: 250px auto auto;
+	grid-template-areas:
+	"head"
+	"content"
+	"footer"; */ 
 }
 /*profile pic*/
 .main-img {
@@ -34,6 +44,7 @@ body{
 
 /*Nav*/
 .header {
+	/* grid-area: head; */
 	background:rgb(44, 44, 44);
 	color: white;
 	height: 130px;
@@ -72,6 +83,7 @@ body{
 
 /*content*/
 #resume {
+	/* grid-area:content; */
 	border:black 1px solid;
 	border-radius: 1px;
 	background: rgba(253, 255, 255, 0.65);/*45*/
@@ -95,6 +107,7 @@ h2{
 
 /*footer*/
 .footer {
+	/* grid-area:footer; */
 	height: 3em;
 	background:rgb(44, 44, 44);
 	color: white;
